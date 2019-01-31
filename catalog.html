@@ -6,22 +6,22 @@
   </head>
   <body>
 
-  	<header class="main-header">
+  	<header class="header">
   		
-  		<nav class="main-header-navigation">
-			<p><a class="main-header-logo">
-				<img src="img/logos.svg" width="163" height="35" alt="логотип Device" class="main-device-logo">
+  		<nav class="header-navigation">
+			<p><a class="header-logo">
+				<img src="img/logos.svg" width="163" height="35" alt="логотип Device" class="device-logo">
 			</a></p>
 
-			<ul class="main-header-user-navigation">
-				<li class="search">Поиск по сайту</li>
-				<li class="username">Валентин Петухов</li>
-				<li class="log-out-link">Выйти</li>
-				<li class="compare-link">Сравнить</li>
-				<li class="cart-link">Корзина</li>
+			<ul class="header-user-navigation">
+				<li class="search"><a href="search.html">Поиск по сайту</a></li>
+				<li class="username"><a href="profile.html">Валентин Петухов</a></li>
+				<li class="log-out-link"><a href="logout.html">Выйти</a></li>
+				<li class="compare-link"><a href="compare.html">Сравнить<a></li>
+				<li class="cart-link"><a href="cart.html">Корзина</a></li>
 			</ul>
 
-			<ul class="main-header-site-navigation">
+			<ul class="header-site-navigation">
 				<li><a href="catalog.html">Каталог товаров</a></li>
 				<li><a href="delivery.html">Доставка</a></li>
 				<li><a href="warranty.html">Гарантия</a></li>
@@ -46,6 +46,7 @@
 		<section class="filters">
 				<h2 hidden>Фильтр товаров</h2>
 				<!--здесь будет форма -->
+				<p><a href="filter.html" class="filter-button">Показать</a></p>
 		</section>
 
 		<section class="catalog">
@@ -119,22 +120,32 @@
 		</section>
 	</main>
 		
-  	<footer class="main-footer">
+  	<footer class="footer">
 
-  			<p><a class="main-footer-logo">
+  		<div class="footer-first">
+
+  			<p><a class="footer-logo">
 				<img src="img/footer-logos.svg" width="163" height="35" alt="логотип Device" class="footer-device-logo">
 			</a></p>
 
-			<nav class="main-footer-navigation">
+			<ul class="footer-user-navigation">
+				<li class="username"><a href="profile.html">Валентин Петухов</a></li>
+				<li class="log-out-link"><a href="logout.html">Выйти</a></li>
+				<li class="compare-link"><a href="compare.html">Сравнить<a></li>
+				<li class="cart-link"><a href="cart.html">Корзина</a></li>
+			</ul>
 
-				<ul class="main-footer-user-navigation">
-					<li class="username">Валентин Петухов</li>
-					<li class="log-out-link">Выйти</li>
-					<li class="compare-link">Сравнить</li>
-					<li class="cart-link">Корзина</li>
-				</ul>
+		<div>	
 
-				<ul class="main-footer-site-navigation">
+		<div class="footer-second">	
+
+			<p class="footer-contacts">
+				г. Москва, ул. Строителей, 15
+			</p>
+
+			<nav class="footer-navigation">
+
+				<ul class="footer-site-navigation">
 					<li><a href="delivery.html">Доставка</a></li>
 					<li><a href="warranty.html">Гарантия</a></li>
 					<li><a href="contacts.html">Контакты</a></li>
@@ -142,13 +153,12 @@
 
   			</nav>
 
-			<p class="main-footer-contacts">
-				г. Москва, ул. Строителей, 15
-			</p>
-
-  			<p class="main-footer-number">
+  			<p class="footer-number">
   				Тел: +7 (495) 495-95-95
   			</p>
+  		</div>	
+
+  		<div class="footer-third">
 
   			<div class="footer-social">
 				<ul>
@@ -157,12 +167,13 @@
 					<li><a class="social-button" href="#">Twitter</a></li>
 				</ul>
 			</div>
-
+			
 			<span class="footer-academy">
 				<a class="button" href="https://htmlaxademy.ru">
 					<img src="img/logo-htmls.svg" width="27" height="35" alt="лого HTML Academy" class="footer-academy-logo">
 				</a>
 			</span>
+		</div>
 
   	</footer>
   </body>
