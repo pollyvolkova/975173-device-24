@@ -6,7 +6,7 @@
   </head>
   <body>
 
-  	<h1 hidden>Магазин гаджетов Device</h1>
+  	<h1 class="visually-hidden" hidden>Магазин гаджетов Device</h1>
   	<header class="header">
   		
   		<nav class="header-navigation">
@@ -71,6 +71,27 @@
 			</section>
 
 		</div>
+
+		<section class="contacts">
+			<h2 class="visually-hidden" hidden>Написать письмо</h2>
+			<button type="button" class="contact-us-cancel" aria-label="Закрыть форму обратной связи"></button>
+			<form class="contact-us" method="post" action="https://echo.htmlacademy.ru">
+				<label for="name">Ваше имя:</label>
+				<input type="text" name="name" id="name" placeholder="Имя Фамилия">
+				<label for="mail">Ваш e-mail:</label>
+				<input type="email" name="mail" id="mail" placeholder="email@example.com">
+				<label for="letter">Текст письма:</label>
+				<textarea name="letter" id="letter" rows="6" placeholder="В свободной форме"></textarea>
+				<input type="submit" name="submit" value="Отправить">
+			</form>
+		</section>
+
+		<section class="map-popup">
+			<h2 class="visually-hidden" hidden>Карта</h2>
+			<button type="button" class="contact-us-cancel" aria-label="Закрыть карту"></button>
+			<img src="img/map-big.jpg" width="994" height="593" alt="Device на карте">
+		</section>
+
   	</main>
 
   	<footer class="footer">

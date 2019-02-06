@@ -22,7 +22,18 @@
 			</ul>
 
 			<ul class="header-site-navigation">
-				<li><a href="catalog.html">Каталог товаров<img src="img/plus.svg" width="16" height="16" alt="Каталог" class="plus-icon"></a></li>
+				<li>
+					<a href="catalog.html">Каталог товаров<img src="img/plus.svg" width="16" height="16" alt="Каталог" class="plus-icon"></a>
+					<ul>
+						<li class="catalog-menu"><a href="vr.html">Виртуальная реальность</a></li>
+						<li class="catalog-menu"><a href="selfie.html">Моноподы для селфи</a></li>
+						<li class="catalog-menu"><a href="action.html">Экшн-камеры</a></li>
+						<li class="catalog-menu"><a href="fitnes.html">Фитнес-браслеты</a></li>
+						<li class="catalog-menu"><a href="smartwatch.html">Умные часы</a></li>
+						<li class="catalog-menu"><a href="quadro.html">Квадрокоптеры</a></li>
+					</ul>
+
+				</li>
 				<li><a href="delivery.html">Доставка</a></li>
 				<li><a href="warranty.html">Гарантия</a></li>
 				<li><a href="contacts.html">Контакты</a></li>
@@ -44,14 +55,53 @@
 	  	</section>
 
 		<section class="filters">
-				<h2 hidden>Фильтр товаров</h2>
-				<!--здесь будет форма -->
-				<p><a href="filter.html" class="filter-button">Показать</a></p>
+				<h2 class="visually-hidden" hidden>Фильтр товаров</h2>
+				<form class="filter" method="post" action="https://echo.htmlacademy.ru">
+					<fieldset>
+						<legend>Цвет</legend>
+						<ul>
+							<li class="filter-option">
+								<input type="checkbox" id="black" name="black" checked>
+								<label for="black">Черный</label>
+							</li>	
+							<li class="filter-option">
+								<input type="checkbox" id="white" name="white">
+								<label for="white">Белый</label>
+							</li>
+							<li class="filter-option">	
+								<input type="checkbox" id="blue" name="blue" checked>
+								<label for="blue">Синий</label>
+							</li>
+							<li class="filter-option">	
+								<input type="checkbox" id="red" name="red" checked>
+								<label for="red">Красный</label>
+							</li>
+							<li class="filter-option">	
+								<input type="checkbox" id="pink" name="pink">
+								<label for="pink">Розовый</label>
+							</li>
+						</ul>
+					</fieldset>
+					<fieldset>
+						<legend>Bluetooth</legend>
+						<ul>
+							<li class="filter-option">
+								<input type="radio" id="with-bth" name="bth" value="with-bth">
+								<label for="with-bth">Есть</label>
+							</li>
+							<li class="filter-option">	
+								<input type="radio" id="no-bth" name="bth" value="no-bth">
+								<label for="no-bth">Нет</label>
+							</li>	
+						</ul>
+					</fieldset>
+				<button type="submit" class="filter-button button">Показать</button>
+				</form>	
 		</section>
 
 		<section class="catalog">
 
-			<h2 class="visually-hidden">Товары в каталоге</h2>
+			<h2 class="visually-hidden" hidden>Товары в каталоге</h2>
 
 				<ul class="catalog-list">
 					<li class="catalog-item">
