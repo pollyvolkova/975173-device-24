@@ -12,7 +12,7 @@
 <body>
     <div class="wrapper">
 
-        <h1 class="visually-hidden" hidden>Магазин гаджетов Device</h1>
+        <h1 class="visually-hidden">Магазин гаджетов Device</h1>
         <header class="header">
 
             <nav class="header-navigation">
@@ -24,7 +24,10 @@
 
                 <ul class="header-user-navigation">
                     <li class="search">
-                        <a href="search.html"><img src="img/search.svg" width="16" height="16" alt="Поиск по сайту" class="icon">Поиск по сайту</a>
+                        <form class="search-main">
+                            <input type="search" placeholder="Поиск по сайту" id="search-item" name="search" class="search-input">
+                            <button type="submit" class="search-button">Найти</button>
+                        </form>
                     </li>
                     <li class="login-link">
                         <a href="login.html"><img src="img/user.svg" width="13" height="12" alt="Войти в профиль" class="icon">Войти</a>
@@ -37,7 +40,27 @@
                 </ul>
 
                 <ul class="header-site-navigation">
-                    <li><a href="catalog.html">Каталог товаров<img src="img/plus.svg" width="16" height="16" alt="Каталог" class="plus-icon"></a></li>
+                    <li>
+                        <a href="catalog.html" class="open-drop">Каталог товаров<img src="img/plus.svg" width="16" height="16" alt="Каталог" class="plus-icon">
+                        </a>
+                        <div class="drop-menu">
+
+                            <ul class="catalog-menu-list">
+                                <div class="drop-first">
+                                    <li class="catalog-menu"><a href="vr.html">Виртуальная реальность</a></li>
+                                    <li class="catalog-menu"><a href="selfie.html">Моноподы для селфи</a></li>
+                                    <li class="catalog-menu"><a href="action.html">Экшн-камеры</a></li>
+                                </div>
+                                <div class="drop-second">
+                                    <li class="catalog-menu"><a href="fitnes.html">Фитнес-браслеты</a></li>
+                                    <li class="catalog-menu"><a href="smartwatch.html">Умные часы</a></li>
+                                </div>
+                                <div class="drop-third">
+                                    <li class="catalog-menu"><a href="quadro.html">Квадрокоптеры</a></li>
+                                </div>
+                            </ul>
+                        </div>
+                    </li>
                     <li><a href="delivery.html">Доставка</a></li>
                     <li><a href="warranty.html">Гарантия</a></li>
                     <li><a href="contacts.html">Контакты</a></li>
@@ -51,37 +74,118 @@
 
             <section class="slider">
 
-                <div class="slider-img">
-                    <img src="img/slider-1.png" width="384" height="486" alt="Карбоновая селфи-палка">
+                <h2 class="visually-hidden">Промо-слайдер</h2>
+                <input class="promo-slider visually-hidden" id="promo-control-1" type="radio" name="promo-control" checked>
+                <input class="promo-slider visually-hidden" id="promo-control-2" type="radio" name="promo-control">
+                <input class="promo-slider visually-hidden" id="promo-control-3" type="radio" name="promo-control">
+
+                <div class="slider-item slider-item-1">
+
+                    <div class="slider-img slider-img-1">
+                        <img src="img/slider-1.png" width="384" height="486" alt="Карбоновая селфи-палка">
+                    </div>
+
+                    <div class="slider-text">
+
+                        <div class="slider-mid">
+
+                            <h2 class="slider-h2">Делай селфи,<br> как Бен Стиллер!</h2>
+                            <p>Самая длинная палка для селфи доступна в нашем магазине.
+                                <br>Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+
+                            <button type="submit" class="button slider-button">Подробнее</button>
+                        </div>
+
+                        <div class="slider-bottom">
+                            <div class="slider-info-desc">
+                                <p class="slider-info">8,5 м</p>
+                                <p class="slider-desc">Длина палки</p>
+                            </div>
+
+                            <div class="slider-info-desc">
+                                <p class="slider-info">5 кг</p>
+                                <p class="slider-desc">Вес палки</p>
+                            </div>
+
+                            <div class="slider-info-desc">
+                                <p class="slider-info">Карбон</p>
+                                <p class="slider-desc">Материал</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="slider-text">
-                    <div class="slider-top">
-                        <h2 class="slider-h2">Делай селфи,</br>как Бен Стиллер!</h2>
-                        <p>Самая длинная палка для селфи доступна в нашем магазине.</br>Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+
+                <div class="slider-item slider-item-2">
+
+                    <div class="slider-img slider-img-2">
+                        <img src="img/slider-2.png" width="345" height="485" alt="Карбоновая селфи-палка">
                     </div>
-                    <div class="slider-mid">
-                        <button type="submit" class="button">Подробнее</button>
-                        <div class="slider-nav">
-                            <button></button>
-                            <button></button>
-                            <button></button>
+
+                    <div class="slider-text">
+
+                        <div class="slider-mid">
+
+                            <h2 class="slider-h2">Худеем <br> правильно!</h2>
+                            <p>Мотивирующие фитнес-браслеты помогут найти в себе силы
+                                <br> не пропускать занятия и соблюдать диету.</p>
+
+                            <button type="submit" class="button slider-button">Подробнее</button>
                         </div>
-                    </div>
-                    <div class="slider-bottom">
-                        <div class="slider-info-desc">
-                            <p class="slider-info">8,5 м</p>
-                            <p class="slider-desc">Длина палки</p>
-                        </div>
-                        <div class="slider-info-desc">
-                            <p class="slider-info">5 кг</p>
-                            <p class="slider-desc">Вес палки</p>
-                        </div>
-                        <div class="slider-info-desc">
-                            <p class="slider-info">Карбон</p>
-                            <p class="slider-desc">Материал</p>
+
+                        <div class="slider-bottom">
+                            <div class="slider-info-desc">
+                                <p class="slider-info">48 часов</p>
+                                <p class="slider-desc">Без подзарядки</p>
+                            </div>
+
                         </div>
                     </div>
                 </div>
+
+                <div class="slider-item slider-item-3">
+
+                    <div class="slider-img slider-img-3">
+                        <img src="img/slider-3.png" width="526" height="334" alt="Карбоновая селфи-палка">
+                    </div>
+
+                    <div class="slider-text">
+
+                        <div class="slider-mid">
+
+                            <h2 class="slider-h2">Порхает как бабочка, <br> жалит как пчела!</h2>
+                            <p>Этот обычный, на первый взгляд, квадрокоптер оснащен
+                                <br> мощным лазером, замаскированным под стандартную камеру.
+                            </p>
+
+                            <button type="submit" class="button slider-button">Подробнее</button>
+                        </div>
+
+                        <div class="slider-bottom">
+                            <div class="slider-info-desc">
+                                <p class="slider-info">800 м</p>
+                                <p class="slider-desc">Дальность полета</p>
+                            </div>
+
+                            <div class="slider-info-desc">
+                                <p class="slider-info">50 м</p>
+                                <p class="slider-desc">Радиус поражения</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="promo-slider-controls">
+                    <label class="promo-slider-control" for="promo-control-1">
+                        <span class="visually-hidden">Первый слайд</span>
+                    </label>
+                    <label class="promo-slider-control" for="promo-control-2">
+                        <span class="visually-hidden">Второй слайд</span>
+                    </label>
+                    <label class="promo-slider-control" for="promo-control-3">
+                        <span class="visually-hidden">Третий слайд</span>
+                    </label>
+                </div>
+
             </section>
 
             <section class="popular">
@@ -95,7 +199,8 @@
                     <li>
                         <a href="selfie.html">
                             <div class="yellow"><img src="img/selfie.png" width="86" height="117" alt="Моноподы для селфи"></div>
-                            <p class="catalog-item-title">Моноподы</br>для селфи</p>
+                            <p class="catalog-item-title">Моноподы
+                                <br>для селфи</p>
                         </a>
                     </li>
                     <li>
@@ -130,50 +235,81 @@
 
         <div class="wrapper services-block">
 
-            <div class="services-nav-block">
+            <div class="services-content">
 
-                <ul class="services-nav">
-                    <li class="button service-button">
-                        <p>Доставка</p>
-                    </li>
-                    <li class="button service-button">
-                        <p>Гарантия</p>
-                    </li>
-                    <li class="button service-button">
-                        <p>Кредит</p>
-                    </li>
-                </ul>
+                <h2 class="visually-hidden">Наши сервисы</h2>
 
+                <input class="services-slider  visually-hidden" id="services-item-1" type="radio" name="services-item" checked>
+                <input class="services-slider  visually-hidden" id="services-item-2" type="radio" name="services-item">
+                <input class="services-slider  visually-hidden" id="services-item-3" type="radio" name="services-item">
+                <div class="about-services">
+
+                    <div class="services-desc services-item-active services-delivery">
+
+                        <div class="services-txt">
+                            <h2>Доставка</h2>
+                            <p>Мы с удовольствием доставим ваш товар прямо к вашему &nbsp; подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+                        </div>
+                        <div class="services-img">
+                            <img src="img/delivery.png" width="136" height="164" alt="Вжух! Какой у нас быстрый курьер!">
+                        </div>
+
+                    </div>
+
+                    <div class="services-desc services-warranty">
+
+                        <div class="services-txt">
+                            <h2>Гарантия</h2>
+                            <p>Если из-за возгорания купленного у нас товара у вас сгорит дом &mdash; не переживайте, мы выдадим вам новый.
+                                <br>Товар, не дом, конечно же.</p>
+                        </div>
+
+                        <div class="services-img">
+                            <img src="img/delivery.png" width="136" height="164" alt="Вжух! Какой у нас быстрый курьер!">
+                        </div>
+
+                    </div>
+
+                    <div class="services-desc services-credit">
+                        <div class="services-txt">
+
+                            <h2>Кредит</h2>
+                            <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
+                        </div>
+
+                        <div class="services-img">
+                            <img src="img/delivery.png" width="136" height="164" alt="Вжух! Какой у нас быстрый курьер!">
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="services-nav-block">
+                    <label class="button service-button service-slider-btn" for="services-item-1">Доставка</label>
+                    <label class="service-slider-btn button service-button" for="services-item-2">Гарантия</label>
+                    <label class="service-slider-btn button service-button" for="services-item-3">Кредит</label>
+
+                </div>
             </div>
-
-            <div class="services-desc">
-
-                <h2>Доставка</h2>
-                <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-
-            </div>
-
-            <img class="delivery-boy" src="img/delivery.png" width="136" height="164" alt="Вжух! Какой у нас быстрый курьер!">
-
         </div>
-
     </section>
 
     <div class="wrapper">
 
         <section class="logotypes">
             <ul class="logotypes-preview">
-                <li>
-                    <a href="patner.html"><img src="img/logo-1.jpg" width="260" height="auto" alt="DJI"></a>
+                <li class="logo-first">
+                    <a href="patner.html"><img src="img/logo-1-active.jpg" width="260" height="auto" alt="DJI" class="logos"></a>
                 </li>
-                <li>
-                    <a href="patner.html"><img src="img/logo-2.jpg" width="260" height="auto" alt="SP Gadgets"></a>
+                <li class="logo-second">
+                    <a href="patner.html"><img src="img/logo-2-active.jpg" width="260" height="auto" alt="SP Gadgets" class="logos"></a>
                 </li>
-                <li>
-                    <a href="patner.html"><img src="img/logo-3.jpg" width="260" height="auto" alt="GoPro"></a>
+                <li class="logo-third">
+                    <a href="patner.html"><img src="img/logo-3-active.jpg" width="260" height="auto" alt="GoPro" class="logos"></a>
                 </li>
-                <li>
-                    <a href="patner.html"><img src="img/logo-4.jpg" width="260" height="auto" alt="VIVE"></a>
+                <li class="logo-fourth">
+                    <a href="patner.html"><img src="img/logo-4-active.jpg" width="260" height="auto" alt="VIVE" class="logos"></a>
                 </li>
             </ul>
 
@@ -215,13 +351,43 @@
                     <a href="#"><img src="img/map-preview.jpg" width="560" height="222" alt="Превью Карты"></a>
                 </p>
 
-                <p class="button"><a href="contacts.html" class="button">Напишите нам</a></p>
+                <button type="button" class="button write-us">Напишите нам</button>
 
             </section>
 
         </div>
     </div>
     </main>
+
+    <section class="contacts-popup visually-hidden">
+        <div class="contacts-content">
+            <h2 class="visually-hidden">Написать письмо</h2>
+            <button type="button" class="contact-us-cancel" aria-label="Закрыть форму обратной связи"></button>
+            <form class="contact-us" method="post" action="https://echo.htmlacademy.ru">
+                <div class="contact-who">
+                    <p class="contact-form">
+                        <label for="name">Ваше имя:</label>
+                        <input class="forms" type="text" name="name" id="name" placeholder="Имя Фамилия" required>
+                    </p>
+                    <p class="contact-form">
+                        <label for="mail">Ваш e-mail:</label>
+                        <input class="forms" type="email" name="mail" id="mail" placeholder="email@example.com" required>
+                    </p>
+                </div>
+                <p class="contact-text-form">
+                    <label for="letter">Текст письма:</label>
+                    <textarea class="forms" name="letter" id="letter" rows="6" placeholder="В свободной форме" required></textarea>
+                </p>
+                <input type="submit" name="submit" value="Отправить" class="button filter-button">
+        </div>
+        </form>
+    </section>
+
+    <section class="map-popup visually-hidden">
+        <h2 class="visually-hidden" hidden>Карта</h2>
+        <button type="button" class="contact-us-cancel" aria-label="Закрыть форму обратной связи"></button>
+        <img src="img/map-big.png" width="994" height="593" alt="Device на карте">
+    </section>
 
     <footer class="footer">
 
@@ -257,9 +423,9 @@
                 <nav class="footer-navigation">
 
                     <ul class="footer-site-navigation">
-                        <li><a href="delivery.html">Доставка</a></li>
-                        <li><a href="warranty.html">Гарантия</a></li>
-                        <li><a href="contacts.html">Контакты</a></li>
+                        <li class="footer-nav-first"><a href="delivery.html">Доставка</a></li>
+                        <li class="footer-nav-second"><a href="warranty.html">Гарантия</a></li>
+                        <li class="footer-nav-third"><a href="contacts.html">Контакты</a></li>
                     </ul>
 
                 </nav>
@@ -270,10 +436,6 @@
             </div>
 
             <div class="footer-third">
-
-                <!-- <span class="footer-line"> -->
-                <img src="img/footer-line.jpg" width="80" height="7" class="footer-img-line">
-                <!-- </span> -->
 
                 <div>
                     <ul class="footer-social">
