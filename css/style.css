@@ -154,7 +154,7 @@ background-color: black;
 
 .search-input:focus {
   border-bottom-color: #000;
-  outline: 0
+  outline: 0;
 }
 
 .search-button {
@@ -165,24 +165,24 @@ background-color: black;
   color: transparent;
   border: 2px solid #000;
   border-radius: 0;
-  background-color: transparent
+  background-color: transparent;
 }
 
 .search-input:focus+.search-button,
 .search-button:focus,
 .search-button:active {
   opacity: 1;
-  color: inherit
+  color: inherit;
 }
 
 .search-input:focus+.search-button:hover {
   color: #fff;
-  background-color: #000
+  background-color: #000;
 }
 
 .search__button:active {
   color: #747474;
-  background-color: #000
+  background-color: #000;
 }
 
 .contacts-popup input.forms,
@@ -214,6 +214,7 @@ background-color: black;
   background-position: center;
   background-repeat: no-repeat;
   background-color: transparent;
+  opacity: 0.5;
 }
 
 .contact-us-cancel:hover,
@@ -305,6 +306,38 @@ h2 {
 .breadcrumbs a:focus,
 .breadcrumbs a:hover {
   opacity: 0.6;
+}
+
+.sorting-types a:hover,
+.sorting-types a:focus,
+.arrows a:hover,
+.arrows a:focus {
+  opacity: 0.4;
+}
+
+.pagination-num a:hover,
+.pagination-num a:focus {
+  opacity: 0.6;
+}
+
+.sorting-types a:active,
+.arrows a:active,
+.pagination-num a:active,
+.item-hover a:hover,
+.item-hover a:focus {
+  opacity: 1;
+}
+
+.sorting-types a,
+.arrows a,
+.item-hover a:active{
+  color: black;
+  opacity: 0.2;
+}
+
+.pagination-num a{
+  color: black;
+  opacity: 0.3;
 }
 
 .open-drop:hover+.drop-menu {
@@ -473,7 +506,7 @@ img.catalog-icon {
   display: flex;
   flex-direction: column;
   width: 328px;
-  height: 1219px;
+  height: auto;
   padding-left: 58px;
   background-color: #ebebeb;
 }
@@ -487,9 +520,10 @@ img.catalog-icon {
   content: " ";
   background-color: #ebebeb;
   width: 140px;
-  height: 1219px;
+  height: 1480px;
   position: absolute;
   left: 0px;
+  z-index: -10;
 }
 
 .filters ul {
@@ -1117,7 +1151,8 @@ input[type="radio"]:checked+label span {
   align-items: flex-start;
   flex-flow: wrap;
   padding-left: 0px;
-  height: 1070px;
+  height: auto;
+  margin-bottom: 40px;
 }
 
 .catalog-item {
@@ -1126,6 +1161,7 @@ input[type="radio"]:checked+label span {
   flex-direction: column;
   margin-right: 40px;
   margin-top: 40px;
+  position: relative;
 }
 
 .catalog-item:nth-child(2n) {
@@ -1135,10 +1171,6 @@ input[type="radio"]:checked+label span {
 .catalog-item:nth-child(2) h3,
 .catalog-item:nth-child(4) h3 {
   max-width: 230px;
-}
-
-.catalog-item:last-child {
-  position: relative;
 }
 
 .catalog-item:nth-child(3n),
@@ -1246,21 +1278,25 @@ li .plus-icon {
 .logo-first {
   background-image: url("../img/logo-1.jpg");
   background-repeat: no-repeat;
+  background-color: #f7e296;
 }
 
 .logo-second {
   background-image: url("../img/logo-2.jpg");
   background-repeat: no-repeat;
+  background-color: #f7e296;
 }
 
 .logo-third {
   background-image: url("../img/logo-3.jpg");
   background-repeat: no-repeat;
+  background-color: #f7e296;
 }
 
 .logo-fourth {
   background-image: url("../img/logo-4.jpg");
   background-repeat: no-repeat;
+  background-color: #f7e296;
 }
 
 .logotypes-preview li:hover .logos,
@@ -1726,6 +1762,16 @@ li .plus-icon {
   margin-top: 18px;
 }
 
+.item-hover a {
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: -0.01em;
+  color: black;
+  opacity: 0.5;
+  margin: 0px;
+  margin-top: 18px;
+}
 
 /*.slider-info-desc:first-child {
   padding-left: 37px;
@@ -1824,7 +1870,8 @@ background-size: 11px 10px;
   align-items: center;
   list-style: none;
   padding: 0px;
-  margin-top: -88px;
+  margin-top: -29px;
+  margin-bottom: 76px;
 }
 
 .pagination-num {
@@ -1877,3 +1924,34 @@ background-size: 11px 10px;
 .pagination-button:active p {
   opacity: 0.3;
 }
+
+.contact-form input:invalid {
+background-color: rgba (237, 181, 181, 0.5);
+}
+
+.catalog-item:hover .item-hover,
+.catalog-item:focus .item-hover {
+  visibility: visible;
+  position: absolute;
+  top:14px;
+  left:0;
+}
+
+.item-hover {
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: center;
+background-color: rgba(238, 238, 238, 0.7);
+width: 360px;
+height: 380px;
+visibility: hidden;
+position: absolute;
+top:14px;
+left:0;
+}
+
+.item-hover .button {
+margin-top: 175px;
+}
+
