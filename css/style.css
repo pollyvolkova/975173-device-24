@@ -1167,6 +1167,10 @@ input[type="radio"]:checked+label span {
   margin: auto;
 }
 
+.width-master {
+    overflow: hidden;
+}
+
 .catalog-list {
   display: flex;
   align-items: flex-start;
