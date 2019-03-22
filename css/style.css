@@ -98,6 +98,9 @@ a:hover {
 .filter-button {
   width: 200px;
   margin-top: 12px;
+  background-image: url("../img/button-line.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .button:active,
