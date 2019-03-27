@@ -1003,6 +1003,7 @@ input[type="radio"]:checked+label span {
 .map-popup iframe {
   position: relative;
   z-index: 999;
+  border: none;
 }
 
 .map-popup p {
